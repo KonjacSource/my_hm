@@ -1,1 +1,1 @@
-bin/main.ml: Environment Syntax
+bin/main.ml: Infer List NameMap Syntax Type
