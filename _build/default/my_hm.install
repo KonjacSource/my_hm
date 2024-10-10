@@ -1,8 +1,0 @@
-lib: [
-  "_build/install/default/lib/my_hm/META"
-  "_build/install/default/lib/my_hm/dune-package"
-  "_build/install/default/lib/my_hm/opam"
-]
-bin: [
-  "_build/install/default/bin/my_hm"
-]
