@@ -1,0 +1,48 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/haskell-curry/.cache/dune/db
+# Workspace root: /home/haskell-curry/ocaml/my_hm
+# Auto-detected concurrency: 12
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_539a52_output
+# Promoting "_build/default/my_hm.opam" to "my_hm.opam"
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.my_hm.objs/byte -no-alias-deps -opaque -o lib/.my_hm.objs/byte/my_hm.cmo -c -impl lib/my_hm.ml-gen)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl bin/main.ml) > _build/default/bin/.main.eobjs/dune__exe__Main.impl.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/my_hm.cma lib/.my_hm.objs/byte/my_hm.cmo)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.test_my_hm.eobjs/byte -no-alias-deps -opaque -o test/.test_my_hm.eobjs/byte/dune__exe__Test_my_hm.cmi -c -intf test/test_my_hm.mli)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl bin/environment.ml) > _build/default/bin/.main.eobjs/dune__exe__Environment.impl.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl bin/syntax.ml) > _build/default/bin/.main.eobjs/dune__exe__Syntax.impl.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I bin/.main.eobjs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe.cmo -c -impl bin/.main.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf bin/main.mli) > _build/default/bin/.main.eobjs/dune__exe__Main.intf.d
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.my_hm.objs/byte -I lib/.my_hm.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.my_hm.objs/native/my_hm.cmx -c -impl lib/my_hm.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_my_hm.eobjs/byte -I test/.test_my_hm.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.test_my_hm.eobjs/native/dune__exe__Test_my_hm.cmx -c -impl test/test_my_hm.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.my_hm.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe.cmx -c -impl bin/.main.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.my_hm.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Syntax.cmo -c -impl bin/syntax.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.my_hm.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Environment.cmo -c -impl bin/environment.ml)
+> File "bin/environment.ml", line 1, characters 0-11:
+> 1 | open Syntax
+>     ^^^^^^^^^^^
+> Error (warning 33): unused open Dune__exe.Syntax.
+> File "bin/environment.ml", line 3, characters 12-13:
+> 3 | let f = fun x -> let y a b = a in y
+>                 ^
+> Error (warning 27): unused variable x.
+> File "bin/environment.ml", line 3, characters 25-26:
+> 3 | let f = fun x -> let y a b = a in y
+>                              ^
+> Error (warning 27): unused variable b.
+[2]
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/my_hm.cmxa lib/.my_hm.objs/native/my_hm.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.my_hm.objs/byte -I lib/.my_hm.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Syntax.cmx -c -impl bin/syntax.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/my_hm.cmxs lib/my_hm.cmxa)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_my_hm.exe test/.test_my_hm.eobjs/native/dune__exe__Test_my_hm.cmx)
